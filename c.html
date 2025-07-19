@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/money.png" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="c.css">
+</head>
+<body>
+    <div class="particle-bg">
+        <span class="particle" style="width:80px;height:80px;left:60vw;top:10vh;"></span>
+        <span class="particle p2"></span>
+        <span class="particle p3"></span>
+        <span class="particle p4"></span>
+        <span class="particle p5"></span>
+    </div>
+    <div class="bg-anim">
+        <span class="symbol1">$</span>
+        <span class="symbol2">€</span>
+        <span class="symbol3">£</span>
+        <span class="symbol4">¥</span>
+        <span class="symbol5">₹</span>
+    </div>
+    <div class="converter-container">
+        <h1>Currency Converter</h1>
+        <div class="converter-form">
+            <input type="number" id="amount" placeholder="Enter amount" min="0" />
+            <select id="from-currency"></select>
+            <span>to</span>
+            <select id="to-currency"></select>
+            <button id="convert-btn">Convert</button>
+        </div>
+        <div id="result"></div>
+    </div>
+    <script src="c.js"></script>
+</body>
+</html>
